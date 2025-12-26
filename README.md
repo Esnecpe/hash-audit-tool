@@ -5,7 +5,7 @@
 > It **does not** provide password recovery / hash-cracking features.
 
 ## Origin's Attribution
-California State University Fullerton (CSUF), CPSC 253 (Cybersecurity Foundations and Principles): Security goals, security systems, access controls, networks and security, integrity, cryptography fundamentals, authentication. Attacks: software, network, website; management considerations, security standards in government and industry; security issues in requirements, architecture, design, implementation, testing, operation, maintenance, acquisition and services.
+California State University Fullerton (CSUF), **CPSC 253 (Cybersecurity Foundations and Principles)**: Security goals, security systems, access controls, networks and security, integrity, cryptography fundamentals, authentication. Attacks: software, network, website; management considerations, security standards in government and industry; security issues in requirements, architecture, design, implementation, testing, operation, maintenance, acquisition and services.
 
 ## Features
 - ✅ Hash generation: `md5`, `sha1`, `sha256`
@@ -41,9 +41,6 @@ hash-audit verify --algo sha256 --password "MyP@ssw0rd!" --hash <HASH> --salt-mo
 hash-audit benchmark --algo sha256 --seconds 2 --output json --out report.json
 hash-audit benchmark --algo sha256 --seconds 2 --output html --out report.html
 ```
-
-## Portfolio blurb (copy/paste)
-**Hash Audit Lab** is a defensive cybersecurity project that demonstrates why modern password storage requires **unique salts** and **slow key-derivation functions**. The tool can generate/verify MD5/SHA1/SHA256 hashes (with configurable salts) and produces JSON/HTML benchmark reports that estimate attacker cost under different password policies. The project includes caching for repeatable experiments, automated tests, and CI via GitHub Actions.
 
 ## Ethical use
 Designed for learning and defensive auditing only. Do not use for unauthorized access.
