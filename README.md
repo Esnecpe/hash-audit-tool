@@ -4,6 +4,9 @@
 > password hashing approaches so you can explain *why* salts + slow KDFs matter.
 > It **does not** provide password recovery / hash-cracking features.
 
+## Origin's Attribution
+California State University Fullerton (CSUF), CPSC 253 (Cybersecurity Foundations and Principles): Security goals, security systems, access controls, networks and security, integrity, cryptography fundamentals, authentication. Attacks: software, network, website; management considerations, security standards in government and industry; security issues in requirements, architecture, design, implementation, testing, operation, maintenance, acquisition and services.
+
 ## Features
 - ✅ Hash generation: `md5`, `sha1`, `sha256`
 - ✅ Salted hashing (prefix or suffix)
