@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hash-audit"
+version = "0.1.0"
+description = "Defensive password hashing lab: generate, verify, and benchmark hashes (MD5/SHA1/SHA256)."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name="Adrian Hernandez"}]
+license = {text="MIT"}
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-cov>=4.0"]
+
+[project.scripts]
+hash-audit = "hash_audit.cli:main"
